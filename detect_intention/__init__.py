@@ -2,6 +2,7 @@ from openai import AzureOpenAI
 import azure.functions as func
 import logging
 import json
+import os
 
 client = AzureOpenAI(
           azure_endpoint = os.environ["AZURE_OPENAI_ENDPOINT"],
